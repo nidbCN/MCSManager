@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>验证界面 | MCSM</title>
+    <title>龙山Craft | 管理后台</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../common/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./static/main.css" rel="stylesheet" />
@@ -20,29 +20,27 @@
       <div id="mlogin_left">
         <!-- 内容 -->
         <div id="mlogin_left_context" class="phone_not">
-          <h3>欢迎使用</h3>
-          <p>简单，快捷，让你的日常操作更加简单。</p>
-          <p>感谢支持，感谢使用。</p>
+          <h3>中北大学 | 龙山Craft</h3>
+          <p>和谐融洽校友MC服务器。</p>
         </div>
         <p class="mlogin_context_footer">
-          <span>©2021 MCSManager. All rights reserved.</span>
+          <span>NUCraft with MCSM</span>
         </p>
         <!-- 登录 -->
         <div id="mlogin_right">
           <div id="mlogin_view">
             <h4>验证</h4>
-            <p>使用您的 MCSM 账户</p>
+            <p>使用您的管理账户</p>
             <div id="mlogin_form">
-              <p>用户名</p>
-              <input id="login-userid" type="text" class="minput" placeholder="普通账号 | 管理用户" onkeypress="enKeyPress()" />
+              <p>账户</p>
+              <input id="login-userid" type="text" class="minput" placeholder="普通账号" onkeypress="enKeyPress()" />
               <p>密码</p>
               <input id="login-passwd" type="password" class="minput" placeholder="账号密码" onkeypress="enKeyPress()" />
               <button id="login-button" class="mbutton" onclick="MCSERVER.btnLogin()">验证</button>
-              <a href="#" class="mlogin_forge" onclick="alert('请联系管理员更改密码，如果您是管理员，请删除user/文件夹下的所有#开头的管理用户')"> 忘记密码? </a>
-              <a href="#" class="mlogin_forge" onclick="alert('暂无帮助提供')"> 需要帮助? </a>
+              <a href="#" class="mlogin_forge" onclick="alert('请联系运维更改密码')"> 忘记密码? </a>
             </div>
             <p class="mlogin_context_footer phone">
-              <span>©2021 MCSManager. All rights reserved.</span>
+              <span>NUCraft with MCSM</span>
             </p>
           </div>
         </div>

@@ -17,13 +17,6 @@
       link: "./template/filemanager.html", //单击时跳转目的
       api: "genuser/home", //通过 Webscoket 后端请求的API,null为不请求,
       select: false
-    },
-    {
-      class: "glyphicon-equalizer",
-      name: "技术支持",
-      link: "./template/gen_about.html",
-      api: null,
-      select: false
     }
   ];
 

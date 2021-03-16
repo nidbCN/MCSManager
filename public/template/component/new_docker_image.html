@@ -50,8 +50,8 @@
     new Vue({
       el: "#NewDockerImage",
       data: {
-        dockerFileText: 'FROM java:latest\nRUN mkdir -p /mcsd\nRUN echo "Asia/Shanghai" > /etc/timezone;dpkg-reconfigure -f noninteractive tzdata\nWORKDIR /mcsd',
-        dockerImageName: "",
+        dockerFileText: 'FROM openjdk:15\nRUN mkdir -p /mcsd\nRUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime\nRUN echo "Asia/Shanghai" >/etc/timezone\nWORKDIR /mcsd',
+        dockerImageName: "mcsd",
         createDockerDis: false
       },
       methods: {
